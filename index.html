@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Nazuka</title>
+  <style>
+    /* Background and center alignment */
+    body {
+      background-color: #A3C9E2; /* Pastel blue */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/heart.png'); /* Heart pattern */
+      background-repeat: repeat;
+    }
+    /* Styling for the birthday message */
+    h1 {
+      color: black;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    /* Styling for the images */
+    img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Birthday Message -->
+  <h1>Happy Birthday Nazuka ❤</h1>
+
+  <!-- Placeholder Images (replace with your own images later) -->
+  <img src="photo1.jpg" alt="Nazuka's Photo 1" />
+  <img src="photo2.jpg" alt="Nazuka's Photo 2" />
+
+  <!-- Confetti Effect using JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script>
+    document.body.addEventListener('click', function() {
+      // Confetti trigger
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: 0.5, y: 0.5 },
+      });
+    });
+  </script>
+</body>
+</html>
